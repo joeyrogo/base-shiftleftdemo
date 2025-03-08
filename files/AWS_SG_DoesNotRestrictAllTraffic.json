@@ -4,6 +4,12 @@
         "InstanceSecurityGroup": {
             "Type": "AWS::EC2::SecurityGroup",
             "Properties": {
+                "Tags": [
+                  {
+                    "Key": "git_file",
+                    "Value": "terraform/aws/ec2.tf"
+                  }
+                ],
                 "GroupDescription": "Allow http to client host",
                 "VpcId": "myVPC",
                 "GroupName" : "default",

@@ -4,6 +4,12 @@
     "s3manishcicd": {
       "Type": "AWS::S3::Bucket",
       "Properties": {
+        "Tags": [
+          {
+            "Key": "git_file",
+            "Value": "terraform/aws/ec2.tf"
+          }
+        ],
         "AccessControl": "LogDeliveryWrite",
         "LoggingConfiguration": {
           "DestinationBucketName": {
